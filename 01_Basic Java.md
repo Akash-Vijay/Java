@@ -46,3 +46,32 @@ public class Greetings {
     }
 }
 ```
+<br>
+
+---
+
+<br>
+
+3. Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
+
+```java
+import java.io.*;
+import java.util.Scanner;
+
+public class Simpleinterest {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter Principal Amount: ");
+        float principalAmount = input.nextFloat();
+        System.out.print("Enter Time Rate: ");
+        float timeRate = input.nextFloat();
+        System.out.print("Enter Rate of Interest: ");
+        float interestRate = input.nextFloat();
+
+        float simpleInterest = principalAmount * (1 + (timeRate *interestRate));
+
+        System.out.println("The Simple Interest is " + simpleInterest);
+    }
+}
+```
