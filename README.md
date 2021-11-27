@@ -1,2 +1,2 @@
 # Java
-Problems to practice Java from Scratch
+Problems to practice Java from scratch
