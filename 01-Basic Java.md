@@ -129,3 +129,37 @@ public class Basicoperations {
 }
 
 ```
+
+<br>
+
+---
+
+<br>
+
+5. Take two numbers as input and print the largest number.
+
+```java
+import java.io.*;
+import java.util.Scanner;
+
+public class Largest {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter two integers: ");
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
+
+        if (num1 > num2) {
+            System.out.println(num1 + " is greater");
+        }
+
+        else if (num2 > num1){
+            System.out.println(num2 + " is greater");
+        }
+        else {
+            System.out.println("Both are equal !");
+        }
+    }
+}
+```
