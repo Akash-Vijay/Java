@@ -75,3 +75,57 @@ public class Simpleinterest {
     }
 }
 ```
+<br>
+
+---
+
+<br>
+
+4. Take in two numbers and an operator (+, -, *, /, %) and calculate the value. (Use if conditions)
+
+```java
+import java.io.*;
+import java.util.Scanner;
+
+public class Basicoperations {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter two numbers: ");
+        float num1 = input.nextFloat();
+        float num2 = input.nextFloat();
+        System.out.print("Enter an operator (+ , - , * , / , %): ");
+        char operator = input.next().charAt(0);
+
+        if (operator == '+') {
+            float sum = num1 + num2;
+            System.out.println("Sum = " + sum);
+        }
+
+        else if (operator == '-') {
+            float difference = num1 - num2;
+            System.out.println("Difference = " + difference);
+        }
+        
+        else if (operator == '*') {
+            float product = num1 * num2;;
+            System.out.println("Product = " + product);
+        }
+
+        else if (operator == '/') {
+            float quotient = num1 / num2;
+            System.out.println("Quotient = " + quotient);
+        }
+        
+        else if (operator == '%') {
+            float remainder = num1 % num2;
+            System.out.println("Remainder = " + remainder);
+        }
+
+        else {
+            System.out.println("Invalid operator. Try Again !");
+        }  
+    }
+}
+
+```
