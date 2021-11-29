@@ -185,3 +185,39 @@ public class Currencyconverter {
     }
 }
 ```
+
+<br>
+
+---
+
+<br>
+
+7. To calculate the Fibonacci Series up to n numbers.
+
+```java
+import java.io.*;
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the limit: ");
+        int limit = input.nextInt();
+
+        int first = 0;
+        int second = 1;
+        int third = 0;
+
+        System.out.println("The Fibonacci series upto " + limit + " is: ");
+
+        while (third < limit) {
+            System.out.print(third + " ");
+            first = second;
+            second = third;
+            third = first + second;
+        }
+        }
+}
+```
+
