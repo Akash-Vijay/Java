@@ -221,3 +221,43 @@ public class Fibonacci {
 }
 ```
 
+<br>
+
+---
+
+<br>
+
+8. To find out whether the given string is Palindrome or not.
+
+```java
+import java.io.*;
+import java.util.Scanner;
+
+public class Palindrome {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the string: ");
+        String string = input.next();
+
+        int flag = 0;
+        int strLength = string.length();
+        for(int i = 0; i < (strLength/2); i++) {
+            if (string.charAt(i) != string.charAt(strLength - i - 1)) {
+                flag ++;
+                break;
+            }
+        }
+
+        if (flag != 0) {
+            System.out.println("Not a Palindrome");
+        }
+        else {
+            System.out.println("Palindrome");
+        }
+        }
+    }   
+```
+
+
+
