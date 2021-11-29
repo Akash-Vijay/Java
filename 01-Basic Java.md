@@ -163,3 +163,25 @@ public class Largest {
     }
 }
 ```
+<br>
+
+---
+
+<br>
+
+6. Input currency in rupees and output in USD.
+
+```java
+import java.io.*;
+import java.util.Scanner;
+
+public class Currencyconverter {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter IND Currency: ₹ ");
+        float currencyInd = input.nextFloat();
+        System.out.println("Converted Currency: $ " + currencyInd * 0.013);
+    }
+}
+```
